@@ -33,19 +33,7 @@ const FrameComponent3 = ({ className = "" }) => {
       content: (
         <>
           <p>
-            By transferring video data and text data from your course material we rapidly train an AI to offer the best coaching experience for your specific course.
-          </p>
-          <p>
-            Simply provide access to your course and sit back.
-          </p>
-          <p>
-            In the course of just a few emails we will figure out your personal needs.
-          </p>
-          <p>
-            Customize the Coach just right for your students to offer the best experience.
-          </p>
-          <p>
-            Become an innovator today with just a simple email!
+            In the course of just a few emails we will figure out your personal needs. Customize the Coach just right for your students to offer the best experience. Become an innovator today with just a simple email!
           </p>
         </>
       ),
@@ -56,10 +44,7 @@ const FrameComponent3 = ({ className = "" }) => {
       content: (
         <>
           <p>
-            We will train the AI based on your course material and requirements to provide the best coaching experience.
-          </p>
-          <p>
-            Our process ensures a personalized coaching tool tailored to your course.
+            We will train the AI based on your course material and requirements to provide the best coaching experience. Our process ensures a personalized coaching tool tailored to your course.
           </p>
         </>
       ),
@@ -70,10 +55,7 @@ const FrameComponent3 = ({ className = "" }) => {
       content: (
         <>
           <p>
-            Once the AI coach is built, you can review and provide feedback.
-          </p>
-          <p>
-            We will make any necessary adjustments based on your feedback.
+            Once the AI coach is built, you can review and provide feedback. We will make any necessary adjustments based on your feedback.
           </p>
         </>
       ),
@@ -84,10 +66,7 @@ const FrameComponent3 = ({ className = "" }) => {
       content: (
         <>
           <p>
-            Continuous improvement is our goal. We will keep enhancing the AI coach based on new data and feedback.
-          </p>
-          <p>
-            Your coach will evolve to better meet your needs and those of your students.
+            Continuous improvement is our goal. We will keep enhancing the AI coach based on new data and feedback. Your coach will evolve to better meet your needs and those of your students.
           </p>
         </>
       ),
@@ -108,7 +87,7 @@ const FrameComponent3 = ({ className = "" }) => {
           top: 0;
           left: 0;
           right: 0;
-          background-color: #d3d3d3;
+          background-color: #F0F0F1;
           height: 0;
           transform-origin: top;
           transition: height 0.5s ease-in-out;

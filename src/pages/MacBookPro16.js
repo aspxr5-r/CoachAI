@@ -14,7 +14,7 @@ const MacBookPro16 = () => {
   }, []);
 
   return (
-    <div className="w-full relative bg-brand-neutrals overflow-hidden flex flex-col items-end justify-start pt-0 px-0 pb-[198px] box-border gap-[146px] leading-[normal] tracking-[normal] mq1125:gap-[73px] mq450:gap-[36px]">
+    <div className="w-full relative bg-brand-neutrals overflow-hidden flex flex-col items-end justify-start pt-0 px-0 pb-[198px] box-border gap-[200px] leading-[normal] tracking-[normal] mq1125:gap-[73px] mq450:gap-[36px]">
       <section className="self-stretch flex flex-col items-end justify-start pt-0 px-0 pb-[42px] box-border max-w-full mq800:pb-5 mq800:box-border mq1125:pb-[27px] mq1125:box-border">
         <Navbar />
         <Content />

@@ -31,10 +31,10 @@ const Content = ({ className = "" }) => {
   return (
     <>
       <div
-        className={`w-[1565px] flex flex-col items-start justify-start py-0 pr-0 pl-5 box-border gap-[30px] max-w-full text-left text-46xl text-absolute-white font-desktop-h4 mq800:gap-[37px] mq450:gap-[18px] ${className}`}
-      >
-        <div className="self-stretch flex flex-row items-start justify-start [row-gap:20px] max-w-full mq1350:flex-wrap">
-          <div className="w-[671px] flex flex-col items-start justify-start pt-[145.2px] px-0 pb-0 box-border min-w-[671px] max-w-full mq1350:flex-1 mq800:pt-[94px] mq800:box-border mq800:min-w-full">
+  className={`w-[1565px] flex flex-col items-start justify-start py-0 pr-0 pl-[0px] box-border gap-[30px] max-w-full text-left text-46xl text-absolute-white font-desktop-h4 mq800:gap-[37px] mq450:gap-[18px] ${className}`}
+>
+        <div className="self-stretch flex flex-row items-start justify-start [row-gap:30px] max-w-full mq1350:flex-wrap">
+          <div className="w-[671px] flex flex-col items-start justify-start pt-[140.2px] px-0 pb-0 box-border min-w-[671px] max-w-full mq1350:flex-1 mq800:pt-[94px] mq800:box-border mq800:min-w-full">
             <div className="self-stretch flex flex-col items-start justify-start gap-[49px] max-w-full mq800:gap-[24px]">
               <div className="self-stretch flex flex-col items-start justify-start gap-[16.7px] max-w-full">
                 <h1 className="m-0 self-stretch h-[151.1px] relative text-inherit font-bold font-inherit inline-block shrink-0 mq800:text-33xl mq450:text-20xl">
