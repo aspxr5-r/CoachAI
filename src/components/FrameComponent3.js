@@ -2,7 +2,8 @@ import PropTypes from "prop-types";
 import { useState, useEffect, useRef } from "react";
 
 const FrameComponent3 = ({ className = "" }) => {
-  const [selectedItem, setSelectedItem] = useState(0);
+  const [selectedItem, setSelectedItem] = useState(0); // Default to the first item
+  const [hoveredItem, setHoveredItem] = useState(null);
   const whiteBackgroundRef = useRef(null);
   const blueBackgroundRef = useRef(null);
 
@@ -97,15 +98,6 @@ const FrameComponent3 = ({ className = "" }) => {
   return (
     <section className={`relative w-full ${className}`}>
       <style jsx>{`
-        @keyframes grow {
-          from {
-            transform: scaleY(0);
-          }
-          to {
-            transform: scaleY(1);
-          }
-        }
-
         .accordion-item {
           position: relative;
           overflow: hidden;
@@ -116,10 +108,30 @@ const FrameComponent3 = ({ className = "" }) => {
           top: 0;
           left: 0;
           right: 0;
-          bottom: 0;
-          background-color: #d3d3d3; /* Update with the actual gray color */
-          transform-origin: center;
-          animation: grow 1.5s ease-in-out forwards;
+          background-color: #d3d3d3;
+          height: 0;
+          transform-origin: top;
+          transition: height 0.5s ease-in-out;
+          border-radius: 15px;
+        }
+
+        .accordion-item .background.expand {
+          height: 100%;
+        }
+
+        .accordion-item .background-hover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 0;
+          background-color: rgba(211, 211, 211, 0.7);
+          transition: height 0.2s ease-in-out;
+          border-radius: 15px;
+        }
+
+        .accordion-item .background-hover.expand {
+          height: 50px;
         }
 
         .heading {
@@ -165,11 +177,20 @@ const FrameComponent3 = ({ className = "" }) => {
           </div>
           <div className="w-[694px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border max-w-full z-[1] text-26xl">
             {accordionItems.map((item, index) => (
-              <div key={index} className="self-stretch flex flex-col items-start justify-start box-border relative gap-[15px] max-w-full accordion-item">
-                {selectedItem === index && (
-                  <div className="background"></div>
-                )}
-                <div className="self-stretch flex flex-row items-start justify-start py-0 px-[31px] box-border max-w-full shrink-0 cursor-pointer" onClick={() => handleClick(index)}>
+              <div
+                key={index}
+                className="self-stretch flex flex-col items-start justify-start box-border relative gap-[15px] max-w-full accordion-item"
+                onMouseEnter={() => setHoveredItem(index)}
+                onMouseLeave={() => setHoveredItem(null)}
+                onClick={() => handleClick(index)}
+              >
+                <div
+                  className={`background-hover ${hoveredItem === index ? 'expand' : ''}`}
+                ></div>
+                <div
+                  className={`background ${selectedItem === index ? 'expand' : ''}`}
+                ></div>
+                <div className="self-stretch flex flex-row items-start justify-start py-0 px-[31px] box-border max-w-full shrink-0 cursor-pointer">
                   <b className="flex-1 relative inline-block max-w-full z-[3] accordion-title">
                     {item.title}
                   </b>

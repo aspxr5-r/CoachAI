@@ -31,7 +31,7 @@ const Content = ({ className = "" }) => {
   return (
     <>
       <div
-        className={`w-[1565px] flex flex-col items-start justify-start py-0 pr-0 pl-5 box-border gap-[74px] max-w-full text-left text-46xl text-absolute-white font-desktop-h4 mq800:gap-[37px] mq450:gap-[18px] ${className}`}
+        className={`w-[1565px] flex flex-col items-start justify-start py-0 pr-0 pl-5 box-border gap-[30px] max-w-full text-left text-46xl text-absolute-white font-desktop-h4 mq800:gap-[37px] mq450:gap-[18px] ${className}`}
       >
         <div className="self-stretch flex flex-row items-start justify-start [row-gap:20px] max-w-full mq1350:flex-wrap">
           <div className="w-[671px] flex flex-col items-start justify-start pt-[145.2px] px-0 pb-0 box-border min-w-[671px] max-w-full mq1350:flex-1 mq800:pt-[94px] mq800:box-border mq800:min-w-full">
@@ -76,7 +76,7 @@ const Content = ({ className = "" }) => {
               className="absolute top-[0px] left-[0px] rounded-31xl bg-brand-washed-blue flex flex-row items-start justify-start py-[11.5px] px-[69px] box-border whitespace-nowrap w-full h-full cursor-pointer mq450:pl-5 mq450:pr-5 mq450:box-border"
               onClick={onButtonContainer2Click}
             >
-              <h1 className="m-0 h-[59px] relative text-inherit font-bold font-inherit inline-block">
+              <h1 className="m-0 h-[60px] relative text-inherit font-bold font-inherit inline-block">
                 Learn more
               </h1>
             </div>
