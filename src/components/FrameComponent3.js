@@ -141,7 +141,7 @@ const FrameComponent3 = ({ className = "" }) => {
           }
         }
       `}</style>
-      <div className="flex">
+      <div className="flex font-sans">
         <div
           ref={whiteBackgroundRef}
           className="w-[854px] bg-neutrals-neutrals-3 overflow-hidden flex flex-col items-start justify-start pt-[94px] px-[54px] pb-[324px] box-border gap-[145px] min-w-[854px] max-w-full mq1350:flex-1 mq1350:pt-[61px] mq1350:pb-[211px] mq1350:box-border mq800:pt-10 mq800:pb-[137px] mq800:box-border mq1125:gap-[72px] mq1125:pl-[27px] mq1125:pr-[27px] mq1125:box-border mq1125:min-w-full mq450:gap-[36px]"
