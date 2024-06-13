@@ -144,13 +144,12 @@ const FrameComponent3 = ({ className = "" }) => {
       <div className="flex font-sans">
         <div
           ref={whiteBackgroundRef}
-          className="w-[854px] bg-neutrals-neutrals-3 overflow-hidden flex flex-col items-start justify-start pt-[94px] px-[54px] pb-[324px] box-border gap-[145px] min-w-[854px] max-w-full mq1350:flex-1 mq1350:pt-[61px] mq1350:pb-[211px] mq1350:box-border mq800:pt-10 mq800:pb-[137px] mq800:box-border mq1125:gap-[72px] mq1125:pl-[27px] mq1125:pr-[27px] mq1125:box-border mq1125:min-w-full mq450:gap-[36px]"
+          className="w-[854px] bg-neutrals-neutrals-3 overflow-hidden flex flex-col items-start justify-start pt-[50px] px-[70px] pb-[324px] h-[1000px] box-border gap-[145px] min-w-[854px] max-w-full mq1350:flex-1 mq1350:pt-[61px] mq1350:pb-[211px] mq1350:box-border mq800:pt-10 mq800:pb-[137px] mq800:box-border mq1125:gap-[72px] mq1125:pl-[27px] mq1125:pr-[27px] mq1125:box-border mq1125:min-w-full mq450:gap-[36px]"
         >
-          <div className="self-stretch flex flex-row items-start justify-end py-0 px-[3px] box-border max-w-full">
+          <div className="self-stretch flex flex-row items-start justify-start py-0 px-[0px] box-border max-w-full">
             <h1
               className="m-0 w-[614px] relative text-inherit font-bold font-inherit inline-block shrink-0 max-w-full z-[1] heading"
-              data-scroll-to="howItWorks"
-            >
+              data-scroll-to="howItWorks">
               How it works
             </h1>
           </div>
